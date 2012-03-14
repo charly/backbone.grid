@@ -1,9 +1,9 @@
 //
 // NEW : Book
 //
-Fees.Views.Books = Fees.Views.Books || {};
+App.Views.Books = App.Views.Books || {};
 
-Fees.Views.Books.NewView = Grid.NewView.extend({
+App.Views.Books.NewView = Grid.NewView.extend({
   id: "new_book",
   className: "new_view",
   template : JST["templates/books/new"],
@@ -19,4 +19,4 @@ Fees.Views.Books.NewView = Grid.NewView.extend({
 
 });
 
-//_.extend(Fees.Views.Books.EditView.prototype, Fees.FormHelpers);
+//_.extend(App.Views.Books.EditView.prototype, App.FormHelpers);

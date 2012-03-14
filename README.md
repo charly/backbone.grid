@@ -1,6 +1,6 @@
 # Backbone.Grid
 
-Backbone.Grid is a set of [Backbone][2] View Extensions to help out build a nice Grid and a few nice things around it. It is composed of a **PageView** (the layout) an **IndexView** (the table) a **NewView** (a form) and an **EditView** (a row in the indexView) which all share a common collection to stay in sync.
+Backbone.Grid is a set of [Backbone][2] View Extensions to help out build a Grid with a few nice things around it. It is composed of a **PageView** (the layout) an **IndexView** (the table) a **NewView** (a form) and an **EditView** (a row in the indexView) which all share a common collection to stay in sync.
 
 ## PageView
 PageView holds the same role the __layout__ holds in a rails view. But it is also close to a controller since it is responsible for instantiating the main subviews - such as the NewView and the IndexView. It can be used to add a FilterView a NavigationView etc etc.
@@ -18,7 +18,7 @@ Is instantiated by a click on the __cell of the table__. The "editCell" function
 
 ## Usage (e.g EditView)
 
-    App.Views.AModel.EditView = Grid.EditView({
+    App.Views.AModel.EditView = Grid.EditView.extend({
       tagName : "tr",
       className : "new_matter",
       template : JST["templates/matters/show"],
@@ -29,9 +29,10 @@ Is instantiated by a click on the __cell of the table__. The "editCell" function
       ...
     })
 
-To quickly build an admin like interface use [Backbonify][1] which heavily uses backbone.grid to create all it's views. Check the examples to have a better idea of how it works.
+To quickly build an admin like interface use [Backbonify][1] which heavily uses backbone.grid to create all it's views. Check the [examples][3] to have a better idea of how it works.
 
 TODO : build an example site to have a better grasp of the overall concepts.
 
 [1]: https://github.com/charly/backbonify
 [2]: https://github.com/documentcloud/backbone
+[3]: https://github.com/charly/backbone.grid/tree/master/examples

@@ -1,9 +1,9 @@
 //
 // SHOW : Book
 //
-Fees.Views.Books = Fees.Views.Books || {};
+App.Views.Books = App.Views.Books || {};
 
-Fees.Views.Books.ShowView = Grid.EditView.extend({
+App.Views.Books.ShowView = Grid.EditView.extend({
   tagName : "tr",
   className : "new_book",
   template : JST["templates/books/show"],
@@ -15,4 +15,4 @@ Fees.Views.Books.ShowView = Grid.EditView.extend({
   noop:null
 });
 
-//_.extend(Fees.Views.Books.EditView.prototype, Fees.FormHelpers);
+//_.extend(App.Views.Books.EditView.prototype, App.FormHelpers);

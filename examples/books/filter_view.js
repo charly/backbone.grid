@@ -1,9 +1,9 @@
 //
 //  FILTER  : Book
 //
-Fees.Views.Books = Fees.Views.Books || {};
+App.Views.Books = App.Views.Books || {};
 
-Fees.Views.Books.FilterView = Backbone.View.extend({
+App.Views.Books.FilterView = Backbone.View.extend({
   events : {
     "keypress input": "filter"
   },
