@@ -29,7 +29,7 @@ Is instantiated by a click on the __cell of the table__. The "editCell" function
       ...
     })
 
-To quickly build an admin like interface [check Backbonify][1] which heavily uses backbone.grid to create all it's views.
+To quickly build an admin like interface use [Backbonify][1] which heavily uses backbone.grid to create all it's views. Check the examples to have a better idea of how it works.
 
 TODO : build an example site to have a better grasp of the overall concepts.
 
